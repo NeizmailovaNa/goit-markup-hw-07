@@ -53,13 +53,13 @@ img {
     background-color: var(--white-color);
 }
 
-.navigation-div,
-.navigation {
+.header__wrapper,
+.header__navigation {
     display: flex;
     align-items: center;
 }
 
-.web-studio {
+.header__logo {
     margin-right: 93px;
     
     padding-top: 24px;
@@ -74,25 +74,24 @@ img {
     color: var(--blue-color);
 }
 
-.logo-dark{
+.header__logo-dark{
     color: var(--main-color);
 }
 
-.container-nav-main{
+.header__pages{
     display: flex;
     padding-left: 0px;
 }
-.container-nav-main .item + .item { 
+.header__pages .header__pages-list + .header__pages-list { 
     margin-left: 50px;
 }
 
-.container-nav-main .link
- {
+.header__pages .header__pages-link {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.container-nav-main .link {
+.header__pages .header__pages-link {
     position: relative;
     color: var(--main-color);
     font-weight: 500;
@@ -101,11 +100,11 @@ img {
     letter-spacing: 0.02em;   
 }
 
-.current {
+.header__pages-link--current {
     position: relative;
 }
 
-.current::after{
+.header__pages-link--current::after{
     content: "";
     position: absolute;
     display: block;
@@ -117,42 +116,22 @@ img {
     transform: translateY(28px);
 }
 
-
-/*
-.container-nav-main .link::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background: var(--blue-color);
-    border-radius: 2px;
-
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
-}
-
-.link:hover::after {
-    opacity: 1;
-}
-*/
-.container-nav-contacts{
+.header__contacts{
     display: flex;
     margin-left: auto;
 }
     
-.container-nav-contacts .item-contacts + .item-contacts{
+.header__contacts .header__contacts-list + .header__contacts-list{
      margin-left: 50px;
 }
 
-.container-nav-contacts .contact {
+.header__contacts .contact {
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
-.container-nav-contacts,
-.contact {
+.header__contacts,
+.header__contact {
     color: var(--secondary-color);
     font-weight: 500;
     font-size: 14px;
@@ -161,28 +140,28 @@ img {
     transition: color var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
 }
 
-.link:hover,
-.link:focus,
-.contact:hover,
-.contact:focus {
+.header__pages-link:hover,
+.header__pages-link:focus,
+.header__contact:hover,
+.header__contact:focus {
     color: var(--blue-color);
 }
 
-.contact:hover .nav-icon-envelope,
-.contact:hover .nav-icon-smartphone,
-.contact:focus .nav-icon-envelope,
-.contact:focus .nav-icon-smartphone {
+.header__contact:hover .header__icon-envelope,
+.header__contact:hover .header__icon-smartphone,
+.header__contact:focus .header__icon-envelope,
+.header__contact:focus .header__icon-smartphone {
     fill: var(--blue-color);
 }
 
-.web-studio,
+.header__logo,
 .web-studio-footer,
-.link,
-.contact {
+.header__pages-link,
+.header__contact {
     text-decoration: none
 }
 
-.nav-icon-envelope {
+.header__icon-envelope {
     fill: var(--secondary-color);
     margin-right: 10px;
     width: 16px;
@@ -190,13 +169,13 @@ img {
     transition: fill var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
 }
 
-.nav-icon-smartphone {
+.header__icon-smartphone {
     fill: var(--secondary-color);
     margin-right: 10px;
     width: 10px;
     height: 16px;
 }
-.contact {
+.header__contact {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,8 +183,8 @@ img {
     transition: fill var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
 }
 
-.contact:hover,
-.contact:focus {
+.header__contact:hover,
+.header__contact:focus {
     fill: var(--blue-color);
 }
 
