@@ -464,34 +464,33 @@ img {
 
 /* buttons-portfolio */
 
-.buttons-title {
-    display: none;
-}
-
-.section-portfolio {
+.portfolio {
     padding: 94px 0px;
     background-color: var(--white-color);
 }
 
-.buttons-title-div {
+.buttons-area {
     margin-bottom: 50px;
 }
+.buttons-area__title {
+    display: none;
+}
 
-.buttons-portfolio {
+.buttons-area__unordered-list {
     display: flex;
     justify-content:center;
     margin-bottom: 50px;
 }
 
-.buttons-portfolio .buttons-list + .buttons-list {
+.buttons-area__unordered-list .buttons-area__list + .buttons-area__list {
     margin-left: 8px;
 }
 
-.button-all,
-.button-web,
-.button-apps,
-.button-design,
-.button-marketing{
+.buttons-area__all,
+.buttons-area__web,
+.buttons-area__apps,
+.buttons-area__design,
+.buttons-area__marketing{
     padding: 6px 22px 6px 22px;
     color: var(--main-color);
     
@@ -508,34 +507,65 @@ img {
     
 }
 
-.button-all:hover,
-.button-web:hover,
-.button-apps:hover,
-.button-design:hover,
-.button-marketing:hover {
+.buttons-area__all:hover,
+.buttons-area__web:hover,
+.buttons-area__apps:hover,
+.buttons-area__design:hover,
+.buttons-area__marketing:hover {
     color: var(--white-color);
     background: var(--blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
-.button-all:focus,
-.button-web:focus,
-.button-apps:focus,
-.button-design:focus,
-.button-marketing:focus {
+.buttons-area__all:focus,
+.buttons-area__web:focus,
+.buttons-area__apps:focus,
+.buttons-area__design:focus,
+.buttons-area__marketing:focus {
     color: var(--white-color);
     background: var(--blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
-.portfolio-image {
+/**examples**/
+.examples__unordered-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.examples__list:hover .examples__description {
+    transform: translateY(0);
+}
+
+.examples__unordered-list .examples__list {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.examples__unordered-list .examples__list:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.examples__link {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    transition: box-shadow var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
+}
+
+.examples__link:hover,
+.examples__ink:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.examples__image {
     position: relative;
     overflow: hidden;
 }
 
-.examples-description {
+.examples__description {
     position: absolute;
     top: 0;
     left: 0;
@@ -552,30 +582,16 @@ img {
     transform: translateY(100%);
     transition: transform var(--animation-time) var(--animation-cubic);
 }
-    
-.portfolio-list:hover .examples-description {
-    transform: translateY(0);
-}
 
-.examples-list {
-    display: flex;
-    flex-wrap: wrap;
+.examples__wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
 }
-
-.examples-list .portfolio-list {
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.examples-list .portfolio-list:nth-child(3n) {
-    margin-right: 0px;
-}
-
-.examples-title-main{
-    display: none;
-}
-
-.examples-title{
+.examples__title{
     margin-bottom: 4px;
     color: var(--main-color);
 
@@ -585,35 +601,13 @@ img {
     letter-spacing: 0.06em; 
 }
 
-.examples-type{
+.examples__type{
     color: var(--secondary-color);
 
     font-size: 16px;
     line-height: 1.89;
     letter-spacing: 0.03em;
 }
-
-.examples-div {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    border: 1px solid #EEEEEE;
-    box-sizing: border-box;
-}
-
-.portfolio-link {
-    position: relative;
-    display: block;
-    text-decoration: none;
-    transition: box-shadow var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
-}
-
-.portfolio-link:hover,
-.portfolio-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 
 /*clients*/
 .clients__title {
@@ -885,7 +879,7 @@ img {
     transform: translate(-50%, -50%) scale(0);
 }
 
-.modal-close {
+.modal__close-button {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -908,25 +902,25 @@ img {
     overflow: hidden;
 }
 
-.modal-close-svg {
+.modal__close-button-svg {
     position: absolute;
     transform: translate(-50%, -50%);
     fill: var(--main-color);
     transition: fill var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
 }
 
-.modal-close:hover,
-.modal-close:focus {
+.modal__close-button:hover,
+.modal__close-button:focus {
     cursor: pointer;
 }
 
-.modal-close:hover .modal-close-svg,
-.modal-close:focus .modal-close-svg {
+.modal__close-button:hover .modal__close-button-svg,
+.modal__close-button:focus .modal__close-button-svg {
     fill: var(--blue-color);
     cursor: pointer;
 }
   
-.modal-title {
+.modal__title {
     text-align: center;
     font-weight: 700;
     font-size: 20px;
@@ -936,11 +930,11 @@ img {
     margin-bottom: 12px;
 }
 
-.input-field {
+.modal__input-field {
     margin-bottom: 10px;
 }
 
-.input-title {
+.modal__input-title {
     display: block;
     margin-bottom: 4px;
 
@@ -952,11 +946,11 @@ img {
     color:rgba(117, 117, 117, 1);
 }
 
-.input-wrap {
+.modal__input-wrap {
     position: relative;
 }
 
-.form-input {
+.modal__form-input {
     width: 100%;
     height: 40px;
     padding: 12px 16px 12px 42px;
@@ -968,27 +962,27 @@ img {
     border-radius: 4px;
 }
 
-.form-input:focus,
-.modal-textarea:focus { 
+.modal__form-input:focus,
+.modal__textarea:focus { 
     outline-color: var(--blue-color);
 }
 
-.input-icon {
+.modal__icon {
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
 }
 
-.form-input:focus + .input-icon {
+.modal__form-input:focus + .modal__icon {
     fill: var(--blue-color);
 }
 
-.user-comment {
+.modal__user-comment {
     margin-bottom: 20px;
 }
 
-.modal-textarea {
+.modal__textarea {
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -998,7 +992,7 @@ img {
     color:rgba(0, 0, 0, 1);
 }
 
-.modal-textarea::placeholder {
+.modal__textarea::placeholder {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -1007,12 +1001,12 @@ img {
     color:  rgba(117, 117, 117, 0.5);
 }
 
-.checkbox-field {
+.modal__checkbox-field {
     position: relative;
     margin-bottom: 30px;
 }
 
-.check-text {
+.modal__check-text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1026,7 +1020,7 @@ img {
     color: var(--secondary-color);
 }
 
-.contract-link {
+.modal__contract-link {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1035,7 +1029,7 @@ img {
     color: var(--blue-color);
 }
 
-.check-text span {
+.modal__check-text span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1050,20 +1044,20 @@ img {
     transition: background-color var(--animation-time) var(--animation-cubic), border-color var(--animation-time) var(--animation-cubic);
 }
 
-.check-mark-icon {
+.modal__check-mark-icon {
     fill: transparent;
 }
 
-.input-check:checked + .check-text .check-mark-icon {
+.modal__input-check:checked + .modal__check-text .modal__check-mark-icon {
     fill: var(--white-color);
 }
 
-.input-check:checked + .check-text span {
+.modal__input-check:checked + .modal__check-text span {
     background-color: var(--blue-color) ;
     border-color: var(--blue-color);
 }
 
-.send-button {
+.modal__send-button {
     position: absolute;
     transform: translateX(60%);
     padding: 10px 52px 10px 52px;
@@ -1081,7 +1075,7 @@ img {
     letter-spacing: 0.06em;
 }
 
-.send-button:hover,
-.send-button:focus {
+.modal__send-button:hover,
+.modal__send-button:focus {
     cursor: pointer;
 }
