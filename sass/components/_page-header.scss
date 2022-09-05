@@ -20,7 +20,6 @@
     padding-top: 24px;
     padding-bottom: 25px;
     color: $blue-color;
-
     font-family: $secondary-text-font;
     font-weight: 700;
     font-size: 26px;
@@ -52,6 +51,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;  
+    transition: color $animation-time $animation-cubic, visibility $animation-time;
     
     &:hover, 
     &:focus {
@@ -82,7 +82,6 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition: color $animation-time $animation-cubic, visibility $animation-time;
 }
 
 .header__contacts-list{
@@ -102,12 +101,11 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition: fill $animation-time $animation-cubic, visibility $animation-time;
+    transition: color $animation-time $animation-cubic, visibility $animation-time;
 
     &:hover, 
     &:focus {
         color: $blue-color;
-        fill: $blue-color;
     }
 }
 
