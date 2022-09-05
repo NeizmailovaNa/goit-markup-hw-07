@@ -1,0 +1,139 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    background-color: $white-color;
+}
+
+.header__wrapper,
+.header__navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo,
+.header__pages-link,
+.header__contact {
+    text-decoration: none
+}
+
+.header__logo {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: $blue-color;
+
+    font-family: $secondary-text-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    &-dark {
+        color: $main-color;
+    }
+}
+
+.header__pages{
+    display: flex;
+    padding-left: 0px;
+}
+
+.header__pages-list { 
+    .header__pages & + & {
+        margin-left: 50px;
+    }
+}
+
+.header__pages-link {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $main-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;  
+    
+    &:hover, 
+    &:focus {
+        color: $blue-color;
+    }
+}
+
+.header__pages-link--current {
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background: $blue-color;
+        border-radius: 2px;
+        transform: translateY(28px); 
+    }
+}
+
+.header__contacts{
+    display: flex;
+    margin-left: auto;
+    color: $secondary-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color $animation-time $animation-cubic, visibility $animation-time;
+}
+
+.header__contacts-list{
+    .header__contacts & + & {
+        margin-left: 50px;
+    }
+}
+
+.header__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $secondary-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: fill $animation-time $animation-cubic, visibility $animation-time;
+
+    &:hover, 
+    &:focus {
+        color: $blue-color;
+        fill: $blue-color;
+    }
+}
+
+.header__icon-envelope {
+    fill: $secondary-color;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    transition: fill $animation-time $animation-cubic, visibility $animation-time;
+
+    .header__contact:hover &,
+    .header__contact:focus & {
+        fill: $blue-color;
+    }
+}
+
+.header__icon-smartphone {
+    fill: $secondary-color;
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+    transition: fill $animation-time $animation-cubic, visibility $animation-time;
+
+    .header__contact:hover &,
+    .header__contact:focus & {
+        fill: $blue-color;
+    }
+}
+
