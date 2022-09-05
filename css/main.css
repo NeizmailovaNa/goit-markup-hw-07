@@ -326,7 +326,7 @@ img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.modal__form-input:focus .modal__icon {
+.modal__form-input:focus + .modal__icon {
   fill: #2196F3;
 }
 
