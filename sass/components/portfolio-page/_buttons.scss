@@ -11,8 +11,7 @@
 }
 
 .buttons-area__unordered-list {
-    display: flex;
-    justify-content:center;
+    @extend %flex;
     margin-bottom: 50px;
 
     & .buttons-area__list + .buttons-area__list {

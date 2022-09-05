@@ -1,12 +1,18 @@
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
 @import "./utils/basic-styles";
+
 @import "./components/page-header";
+
 @import "./components/main-page/hero";
 @import "./components/main-page/modal";
 @import "./components/main-page/our-advantages";
 @import "./components/main-page/work";
 @import "./components/main-page/team";
 @import "./components/main-page/clients";
+
 @import "./components/portfolio-page/buttons";
 @import "./components/portfolio-page/examples";
+
 @import "./components/page-footer";

@@ -7,9 +7,7 @@
 }
 
 .clients__unodered-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     margin-top: 50px;
 }
 .clients__list {
@@ -21,9 +19,7 @@
 }
 
 .clients__link  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     width: 170px;
     height: 92px;
     border: 1px solid $icons-color;

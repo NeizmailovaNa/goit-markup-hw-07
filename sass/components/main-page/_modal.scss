@@ -150,9 +150,7 @@
 }
 
 .modal__check-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -166,14 +164,13 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em;
     color: $blue-color;
 }
 
 span {
     .modal__check-text & {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @extend %flex;
         width: 16px;
         height: 15px;
         margin-right: 8px;

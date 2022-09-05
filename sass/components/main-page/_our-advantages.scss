@@ -52,9 +52,7 @@
 }
 
 .features__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
