@@ -3,19 +3,25 @@
     background-color: $white-color;
 }
 
-.header__wrapper,
-.header__navigation {
+.header__wrapper {
     display: flex;
     align-items: center;
 }
 
-.header__logo,
-.header__pages-link,
-.header__contact {
+.header__navigation {
+    @extend .header__wrapper;
+}
+
+.header__pages-link {
     text-decoration: none
 }
 
+.header__contact {
+    @extend .header__pages-link;
+}
+
 .header__logo {
+    text-decoration: none;
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;

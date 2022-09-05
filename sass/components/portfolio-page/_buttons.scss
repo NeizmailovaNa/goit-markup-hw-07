@@ -20,11 +20,7 @@
     }
 }
 
-.buttons-area__all,
-.buttons-area__web,
-.buttons-area__apps,
-.buttons-area__design,
-.buttons-area__marketing{
+.buttons-area__all {
     padding: 6px 22px 6px 22px;
     color: $main-color;
     font-weight: 500;
@@ -44,4 +40,20 @@
         border-radius: 4px; 
         cursor: pointer;
     }
+}
+
+.buttons-area__web {
+    @extend .buttons-area__all;
+}
+
+.buttons-area__apps {
+    @extend .buttons-area__all;
+}
+
+.buttons-area__design {
+    @extend .buttons-area__all;
+}
+
+.buttons-area__marketing {
+    @extend .buttons-area__all;
 }
