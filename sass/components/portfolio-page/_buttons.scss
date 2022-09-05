@@ -1,6 +1,6 @@
 .portfolio {
     padding: 94px 0px;
-    background-color: var(--white-color);
+    background-color: $white-color;
 }
 
 .buttons-area {
@@ -14,10 +14,10 @@
     display: flex;
     justify-content:center;
     margin-bottom: 50px;
-}
 
-.buttons-area__unordered-list .buttons-area__list + .buttons-area__list {
-    margin-left: 8px;
+    & .buttons-area__list + .buttons-area__list {
+     margin-left: 8px;
+    }
 }
 
 .buttons-area__all,
@@ -26,39 +26,22 @@
 .buttons-area__design,
 .buttons-area__marketing{
     padding: 6px 22px 6px 22px;
-    color: var(--main-color);
-    
+    color: $main-color;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-
-    background: #F5F4FA;
+    background-color: #F5F4FA;
     border-radius: 4px;
-    cursor: pointer;
     border: 0px;
-    transition: color var(--animation-time) var(--animation-cubic), visibility var(--animation-time), background var(--animation-time) var(--animation-cubic), visibility var(--animation-time), box-shadow var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
+    transition: color $animation-time $animation-cubic, visibility $animation-time, background-color $animation-time $animation-cubic, visibility $animation-time, box-shadow $animation-time $animation-cubic, visibility $animation-time;
     
-}
-
-.buttons-area__all:hover,
-.buttons-area__web:hover,
-.buttons-area__apps:hover,
-.buttons-area__design:hover,
-.buttons-area__marketing:hover {
-    color: var(--white-color);
-    background: var(--blue-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-}
-
-.buttons-area__all:focus,
-.buttons-area__web:focus,
-.buttons-area__apps:focus,
-.buttons-area__design:focus,
-.buttons-area__marketing:focus {
-    color: var(--white-color);
-    background: var(--blue-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    &:hover,
+    &:focus {
+        color: $white-color;
+        background: $blue-color;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px; 
+        cursor: pointer;
+    }
 }
