@@ -318,6 +318,9 @@ img {
 .modal__form-input:focus {
   outline-color: #2196F3;
 }
+.modal__form-input:focus .modal__icon {
+  fill: #2196F3;
+}
 
 .modal__icon {
   position: absolute;
@@ -326,10 +329,6 @@ img {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.modal__form-input:focus + .modal__icon {
-  fill: #2196F3;
-}
-
 .modal__user-comment {
   margin-bottom: 20px;
 }
