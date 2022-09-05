@@ -81,8 +81,12 @@
     width: 20px;
     height: 20px;
     fill: $icons-color;
-    transition: fill $animation-time $animation-cubic, visibility $animation-time;
 
+    .participant-networks__link &,
+    .participant-networks__link & {
+        transition: fill $animation-time $animation-cubic, visibility $animation-time;
+    }
+    
     .participant-networks__link:hover &,
     .participant-networks__link:focus & {
         fill: $white-color;
