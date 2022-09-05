@@ -181,7 +181,7 @@
     border-radius: 2px;
     transition: background-color $animation-time $animation-cubic, border-color $animation-time $animation-cubic;
     
-    .modal__input-check:checked & {
+    .modal__input-check:checked + & {
         background-color: $blue-color;
         border-color: $blue-color;
     }
