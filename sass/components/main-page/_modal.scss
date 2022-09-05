@@ -104,7 +104,7 @@
         outline-color: $blue-color;
     }
 
-    &:focus .modal__icon { 
+    &:focus + .modal__icon { 
         fill: $blue-color;
     }
 }
