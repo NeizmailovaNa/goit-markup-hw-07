@@ -1,31 +1,29 @@
 .examples__unordered-list {
     display: flex;
     flex-wrap: wrap;
+
+    & .examples__list {
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    & .examples__list:nth-child(3n) {
+        margin-right: 0px;
+    }
 }
 
-.examples__list:hover .examples__description {
-    transform: translateY(0);
-}
 
-.examples__unordered-list .examples__list {
-    margin-right: 30px;
-    margin-bottom: 30px;
-}
-
-.examples__unordered-list .examples__list:nth-child(3n) {
-    margin-right: 0px;
-}
 
 .examples__link {
     position: relative;
     display: block;
     text-decoration: none;
-    transition: box-shadow var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
-}
+    transition: box-shadow $animation-time $animation-cubic, visibility $animation-time;
 
-.examples__link:hover,
-.examples__ink:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
 .examples__image {
@@ -37,18 +35,20 @@
     position: absolute;
     top: 0;
     left: 0;
-
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-    color: var(--white-color);
+    color: $white-color;
     background: rgba(33, 150, 243, 0.9);
-
     padding: 63px 24px 63px 24px;
     transform: translateY(100%);
-    transition: transform var(--animation-time) var(--animation-cubic);
+    transition: transform $animation-time $animation-cubic, visibility $animation-time;
+    
+    .examples__list:hover & {
+        transform: translateY(0);
+    }
 }
 
 .examples__wrap {
@@ -61,8 +61,7 @@
 }
 .examples__title{
     margin-bottom: 4px;
-    color: var(--main-color);
-
+    color: $main-color;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
@@ -70,8 +69,7 @@
 }
 
 .examples__type{
-    color: var(--secondary-color);
-
+    color: $secondary-color;
     font-size: 16px;
     line-height: 1.89;
     letter-spacing: 0.03em;

@@ -838,17 +838,10 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
-.examples__list:hover .examples__description {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .examples__unordered-list .examples__list {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-
 .examples__unordered-list .examples__list:nth-child(3n) {
   margin-right: 0px;
 }
@@ -857,14 +850,12 @@ img {
   position: relative;
   display: block;
   text-decoration: none;
-  -webkit-transition: visibility var(--animation-time), -webkit-box-shadow var(--animation-time) var(--animation-cubic);
-  transition: visibility var(--animation-time), -webkit-box-shadow var(--animation-time) var(--animation-cubic);
-  transition: box-shadow var(--animation-time) var(--animation-cubic), visibility var(--animation-time);
-  transition: box-shadow var(--animation-time) var(--animation-cubic), visibility var(--animation-time), -webkit-box-shadow var(--animation-time) var(--animation-cubic);
+  -webkit-transition: visibility 250ms, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.examples__link:hover,
-.examples__ink:focus {
+.examples__link:hover, .examples__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -883,15 +874,19 @@ img {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: var(--white-color);
+  color: #FFFFFF;
   background: rgba(33, 150, 243, 0.9);
   padding: 63px 24px 63px 24px;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform var(--animation-time) var(--animation-cubic);
-  transition: -webkit-transform var(--animation-time) var(--animation-cubic);
-  transition: transform var(--animation-time) var(--animation-cubic);
-  transition: transform var(--animation-time) var(--animation-cubic), -webkit-transform var(--animation-time) var(--animation-cubic);
+  -webkit-transition: visibility 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: visibility 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.examples__list:hover .examples__description {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .examples__wrap {
@@ -906,7 +901,7 @@ img {
 
 .examples__title {
   margin-bottom: 4px;
-  color: var(--main-color);
+  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -914,7 +909,7 @@ img {
 }
 
 .examples__type {
-  color: var(--secondary-color);
+  color: #757575;
   font-size: 16px;
   line-height: 1.89;
   letter-spacing: 0.03em;
