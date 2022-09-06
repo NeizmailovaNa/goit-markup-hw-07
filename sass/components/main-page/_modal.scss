@@ -155,6 +155,11 @@ span {
         transition: background-color $animation-time $animation-cubic, border-color $animation-time $animation-cubic;
     }
 
+    .modal__check-text:hover + &, 
+    .modal__check-text:focus + & {
+         cursor: pointer;
+    }
+
     .modal__input-check:checked + .modal__check-text & {
         background-color: $blue-color;
         border-color: $blue-color;
