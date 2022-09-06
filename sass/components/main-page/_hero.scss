@@ -17,7 +17,7 @@
 
 .hero__title {
     margin: 0px;
-    @mixin text-decoration(normal, 900, 44px, 1.36, 0.06);
+    @include text-decoration(normal, 900, 44px, 1.36, 0.06);
     text-transform: uppercase;
     color: $white-color;  
 }
@@ -28,10 +28,7 @@
     color: $white-color;    
     background: $blue-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
+    @include text-decoration(normal, 700, 16px, 1.87, 0.06);
     border: 0;
     border-radius: 4px;
 
