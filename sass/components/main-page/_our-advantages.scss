@@ -39,8 +39,7 @@
         content: "";
         position: absolute;
         display: block;
-        width: 100%;
-        height: 70px;
+        @include geometry(100%, 70px);
         left: 0;
     }
 }

@@ -18,14 +18,12 @@
 .clients__link  {
     @extend %flex;
     @include geometry(170px, 92px);
-    border: 1px solid $icons-color;
-    border-radius: 4px;
+    @include bordered($icons-color, 4px);
     transition: border $animation-time $animation-cubic, visibility $animation-time, border-radius $animation-time $animation-cubic, visibility $animation-time;
 
     &:hover,
     &:focus {
-        border: 1px solid $blue-color;
-        border-radius: 4px;
+        @include bordered($blue-color, 4px);
     }
 }
 
