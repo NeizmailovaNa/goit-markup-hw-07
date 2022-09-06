@@ -31,16 +31,12 @@
 
 .examples__description {
     position: absolute;
+    padding: 63px 24px 63px 24px;
     top: 0;
     left: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
+    @include text-decoration(normal, 400, 18px, 1.56, 0.03em);
     color: $white-color;
-    background: rgba(33, 150, 243, 0.9);
-    padding: 63px 24px 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform $animation-time $animation-cubic, visibility $animation-time;
     
@@ -50,25 +46,17 @@
 }
 
 .examples__wrap {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 20px 24px 20px 24px;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
 .examples__title{
     margin-bottom: 4px;
     color: $main-color;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2.00;
-    letter-spacing: 0.06em; 
+    @include text-decoration(normal, 700, 18px, 2.00, 0.06em);
 }
 
 .examples__type{
     color: $secondary-color;
-    font-size: 16px;
-    line-height: 1.89;
-    letter-spacing: 0.03em;
+    @include text-decoration(normal, 400, 16px, 1.89, 0.03em);
 }

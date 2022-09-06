@@ -731,6 +731,7 @@ img {
 .buttons-area__all, .buttons-area__marketing, .buttons-area__design, .buttons-area__apps, .buttons-area__web {
   padding: 6px 22px 6px 22px;
   color: #212121;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -788,16 +789,16 @@ img {
 
 .examples__description {
   position: absolute;
+  padding: 63px 24px 63px 24px;
   top: 0;
   left: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-  background: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
   -webkit-transition: visibility 250ms, -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -811,10 +812,7 @@ img {
 }
 
 .examples__wrap {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 20px 24px 20px 24px;
   border: 1px solid #EEEEEE;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -823,6 +821,7 @@ img {
 .examples__title {
   margin-bottom: 4px;
   color: #212121;
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -831,6 +830,8 @@ img {
 
 .examples__type {
   color: #757575;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.89;
   letter-spacing: 0.03em;
@@ -842,10 +843,12 @@ img {
   display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #2F303A;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  background: #2F303A;
 }
 
 .footer__container {
@@ -869,12 +872,13 @@ img {
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
+  text-decoration: none;
   font-family: Raleway, sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  text-decoration: none;
   color: #2196F3;
 }
 .footer__logo-light {
@@ -899,6 +903,7 @@ img {
 
 .footer__company-contacts {
   text-decoration: none;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -916,9 +921,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -964,6 +970,7 @@ img {
 .footer-email__title {
   display: block;
   margin-bottom: 20px;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -985,29 +992,39 @@ img {
   border-radius: 4px;
 }
 .footer-email__input::-webkit-input-placeholder {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 .footer-email__input::-moz-placeholder {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 .footer-email__input:-ms-input-placeholder {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 .footer-email__input::-ms-input-placeholder {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 .footer-email__input::placeholder {
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
+  letter-spacing: 0.03em;
 }
 
 .footer-email__send-button {
@@ -1027,6 +1044,7 @@ img {
 
 .footer-email__button-text {
   display: inline-block;
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;

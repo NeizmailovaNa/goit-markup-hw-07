@@ -11,7 +11,7 @@
     height: $height;
 }
 
-@mixin bordered() {
-    border: $border;
+@mixin bordered($border-color, $border-radius) {
+    border: 1px solid $border-color;
     border-radius: $border-radius;
 }

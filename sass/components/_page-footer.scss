@@ -2,10 +2,8 @@
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
+    @include text-decoration(normal, 400, 14px, 1.71, 0.03em);
     background: $footer-bgc; 
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
 }
 
 .footer__container {
@@ -24,12 +22,9 @@
 .footer__logo {
     display: inline-block;
     margin-bottom: 20px;
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
     text-decoration: none;
+    font-family: $secondary-text-font;
+    @include text-decoration(normal, 700, 26px, 1.19, 0.03em);
     color: $blue-color;
 
     &-light {
@@ -56,10 +51,7 @@
 
 .footer__company-contacts {
     text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include text-decoration(normal, 400, 14px, 1.71, 0.03em);
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -71,10 +63,7 @@
 .footer-networks__title {
     display: flex;
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include text-decoration(normal, 700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: $white-color;
 }
@@ -94,8 +83,7 @@
 
 .footer-networks__link {
     @extend %flex;
-    width: 44px;
-    height: 44px;
+    @include geometry(44px, 44px);
     background-color: rgba(255, 255, 255, 0.1);
     border: 0px;
     border-radius: 50px;
@@ -108,8 +96,7 @@
 }
 
 .footer-networks__svg {
-    width: 20px;
-    height: 20px;
+    @include geometry(20px, 20px);
     fill: $white-color;
 }
 
@@ -121,10 +108,7 @@
 .footer-email__title {
     display: block;
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include text-decoration(normal, 700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: $white-color;
 }
@@ -136,8 +120,7 @@
 .footer-email__input {
     padding: 15px 16px 15px 16px;
     margin-right: 12px;
-    width: 358px;
-    height: 50px;
+    @include geometry(358px, 50px);
     color: $white-color;
     background-color: $footer-bgc;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -145,9 +128,7 @@
     border-radius: 4px;
 
     &::placeholder {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 1.25;
+        @include text-decoration(normal, 400, 16px, 1.25, 0.03em);
     }
 }
 
@@ -166,10 +147,7 @@
 
 .footer-email__button-text {
     display: inline-block;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    @include text-decoration(normal, 700, 16px, 1.88, 0.06em);
     color: $white-color;
     margin-right: 10px;
 }
