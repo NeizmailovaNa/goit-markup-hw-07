@@ -67,7 +67,7 @@
         display: block;
         @include geometry(100%, 4px);
         background: $blue-color;
-        border-radius: 2px;
+        @include border-radius(2px);
         transform: translateY(28px); 
     }
 }

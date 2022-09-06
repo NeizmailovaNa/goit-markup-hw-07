@@ -47,7 +47,7 @@
 
 .examples__wrap {
     padding: 20px 24px 20px 24px;
-    border: 1px solid #EEEEEE;
+    @include bordered(#EEEEEE, 0px);
     box-sizing: border-box;
 }
 .examples__title{

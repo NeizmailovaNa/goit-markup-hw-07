@@ -29,8 +29,7 @@
     background: $blue-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     @include text-decoration(normal, 700, 16px, 1.87, 0.06);
-    border: 0;
-    border-radius: 4px;
+    @include border-radius(4px);
 
     &:hover,
     &:focus {

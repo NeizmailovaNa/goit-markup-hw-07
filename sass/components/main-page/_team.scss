@@ -59,7 +59,7 @@
 .participant-networks__link {
     @extend %flex;
     @include geometry(44px, 44px);
-    border-radius: 50px;
+    @include border-radius(50px);
     transition: background-color $animation-time $animation-cubic, visibility $animation-time;
 
     &:hover,
