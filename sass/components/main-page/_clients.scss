@@ -1,9 +1,6 @@
 .clients__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
+    @include text-decoration(normal, 700, 36px, 1.17, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .clients__unodered-list {
@@ -20,8 +17,7 @@
 
 .clients__link  {
     @extend %flex;
-    width: 170px;
-    height: 92px;
+    @include geometry(170px, 92px);
     border: 1px solid $icons-color;
     border-radius: 4px;
     transition: border $animation-time $animation-cubic, visibility $animation-time, border-radius $animation-time $animation-cubic, visibility $animation-time;
@@ -34,8 +30,7 @@
 }
 
 .clients__logo {
-    width: 106px;
-    height: 60px;  
+    @include geometry(106px, 60px);
     fill: $icons-color;
     transition: fill $animation-time $animation-cubic, visibility $animation-time;
 

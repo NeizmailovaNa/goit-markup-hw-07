@@ -1,8 +1,7 @@
 .backdrop {
     position: fixed;
     top: 0;
-    width: 100%;
-    height: 100%;
+    @include geometry(100%, 100%);
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity $animation-time $animation-cubic, visibility $animation-time;
 
@@ -34,9 +33,8 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
     padding: 0;
+    @include geometry(30px, 30px);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: $white-color;
@@ -67,9 +65,7 @@
   
 .modal__title {
     text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-    letter-spacing: 0.03em;
+    @include text-decoration(normal, 700, 20px, 1.15, 0.03em); 
     color: $main-color;
     margin-bottom: 12px;
 }
@@ -81,9 +77,7 @@
 .modal__input-title {
     display: block;
     margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0.01em;
+    @include text-decoration(normal, 400, 12px, 1.17, 0.01em); 
     color:rgba(117, 117, 117, 1);
 }
 
@@ -92,8 +86,7 @@
 }
 
 .modal__form-input {
-    width: 100%;
-    height: 40px;
+    @include geometry(100%, 40px);
     padding: 12px 16px 12px 42px;
     font-size: 16px;
     color:rgba(0, 0, 0, 1);
@@ -121,8 +114,7 @@
 }
 
 .modal__textarea {
-    width: 100%;
-    height: 120px;
+    @include geometry(100%, 120px);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px 12px 16px;
@@ -134,11 +126,7 @@
     }
 
     &::placeholder {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.01em;
+        @include text-decoration(normal, 400, 12px, 1.17, 0.01em); 
         color:  rgba(117, 117, 117, 0.5);
     }
 }
@@ -151,28 +139,19 @@
 
 .modal__check-text {
     @extend %flex;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include text-decoration(normal, 400, 14px, 1.71, 0.03em);
     color: $secondary-color;
 }
 
 .modal__contract-link {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include text-decoration(normal, 400, 14px, 1.71, 0.03em);
     color: $blue-color;
 }
 
 span {
     .modal__check-text & {
         @extend %flex;
-        width: 16px;
-        height: 15px;
+        @include geometry(16px, 15px);
         margin-right: 8px;
         background-color: $white-color;
         border: 2px solid $main-color;
@@ -203,11 +182,7 @@ span {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0px;
     border-radius: 4px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    @include text-decoration(normal, 700, 16px, 1.88, 0.06em);
 
     &:hover,
     &:focus {

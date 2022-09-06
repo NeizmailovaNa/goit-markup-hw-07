@@ -11,10 +11,6 @@
     height: $height;
 }
 
-@mixin indents($margin, $padding) {
-    margin: $margin;
-    padding: $padding;
-}
 @mixin bordered() {
     border: $border;
     border-radius: $border-radius;

@@ -248,9 +248,9 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  padding: 0;
   width: 30px;
   height: 30px;
-  padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: #FFFFFF;
@@ -280,8 +280,10 @@ img {
 
 .modal__title {
   text-align: center;
+  font-style: normal;
   font-weight: 700;
   font-size: 20px;
+  line-height: 1.15;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
@@ -294,8 +296,10 @@ img {
 .modal__input-title {
   display: block;
   margin-bottom: 4px;
+  font-style: normal;
   font-weight: 400;
   font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgb(117, 117, 117);
 }
@@ -348,7 +352,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -356,7 +360,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -364,7 +368,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -372,7 +376,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -380,7 +384,7 @@ img {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -476,6 +480,7 @@ img {
 .features__link-title {
   margin-bottom: 10px;
   color: #212121;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -484,6 +489,8 @@ img {
 }
 
 .features__text {
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -541,23 +548,24 @@ img {
 
 .work__text {
   position: absolute;
+  padding-top: 27px;
+  width: 100%;
+  height: 70px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
   background: rgba(47, 48, 58, 0.8);
-  padding-top: 27px;
-  height: 70px;
-  width: 100%;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
 
 .work__title {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -572,6 +580,7 @@ img {
 .team__title {
   text-align: center;
   margin-bottom: 50px;
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -599,6 +608,7 @@ img {
 .team__participant-name {
   margin-bottom: 10px;
   text-align: center;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -608,6 +618,8 @@ img {
 
 .team__profession {
   text-align: center;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -653,11 +665,12 @@ img {
 }
 
 .clients__title {
+  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .clients__unodered-list {
