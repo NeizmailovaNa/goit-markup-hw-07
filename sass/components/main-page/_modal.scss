@@ -90,10 +90,6 @@
     font-size: 16px;
     color:rgba(0, 0, 0, 1);
     @include bordered(rgba(33, 33, 33, 0.2), 4px);
-
-    &:focus { 
-        outline-color: $blue-color;
-    }
 }
 
 .modal__icon {
@@ -155,9 +151,9 @@ span {
         transition: background-color $animation-time $animation-cubic, border-color $animation-time $animation-cubic;
     }
 
-    .modal__check-text:hover + &, 
+    .modal__check-text:hover + &,
     .modal__check-text:focus + & {
-         cursor: pointer;
+        cursor: pointer;
     }
 
     .modal__input-check:checked + .modal__check-text & {
