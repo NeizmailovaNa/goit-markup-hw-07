@@ -26,10 +26,7 @@
     padding-bottom: 25px;
     color: $blue-color;
     font-family: $secondary-text-font;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include text-decoration(normal, 700, 26px, 1.19, 0.03em);
 
     &-dark {
         color: $main-color;
@@ -52,10 +49,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     color: $main-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;  
+    @include text-decoration(normal, 500, 14px, 1.14, 0.02em); 
     transition: color $animation-time $animation-cubic, visibility $animation-time;
     
     &:hover, 
@@ -71,8 +65,7 @@
         content: "";
         position: absolute;
         display: block;
-        width: 100%;
-        height: 4px;
+        @include geometry(100%, 4px);
         background: $blue-color;
         border-radius: 2px;
         transform: translateY(28px); 
@@ -83,10 +76,7 @@
     display: flex;
     margin-left: auto;
     color: $secondary-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include text-decoration(normal, 500, 14px, 1.14, 0.02em); 
 }
 
 .header__contacts-list{
@@ -100,10 +90,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
     color: $secondary-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @include text-decoration(normal, 500, 14px, 1.14, 0.02em); 
     transition: color $animation-time $animation-cubic, visibility $animation-time;
 
     &:hover, 
@@ -115,8 +102,7 @@
 .header__icon-envelope {
     fill: $secondary-color;
     margin-right: 10px;
-    width: 16px;
-    height: 12px;
+    @include geometry(16px, 12px);
     transition: fill $animation-time $animation-cubic, visibility $animation-time;
 
     .header__contact:hover &,
@@ -128,8 +114,7 @@
 .header__icon-smartphone {
     fill: $secondary-color;
     margin-right: 10px;
-    width: 10px;
-    height: 16px;
+    @include geometry(10px, 16px);
     transition: fill $animation-time $animation-cubic, visibility $animation-time;
 
     .header__contact:hover &,

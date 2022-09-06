@@ -17,10 +17,7 @@
 
 .hero__title {
     margin: 0px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
+    @mixin text-decoration(normal, 900, 44px, 1.36, 0.06);
     text-transform: uppercase;
     color: $white-color;  
 }
@@ -43,5 +40,3 @@
         cursor: pointer;
     }
 }
-
-
